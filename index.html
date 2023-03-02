@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/inserir-icone-de-imagem.png" type="image/x-icon">
     <!--Css style-->
     <link rel="stylesheet" href="/css/style.css">
     <!--Bootstrap icons-->
@@ -13,6 +14,7 @@
     <title>Catch image</title>
 </head>
 <body>
+    <!--cabeçalho-->
     <header class="container">
         <div class="header">
                 <nav>
@@ -24,11 +26,15 @@
                 </nav>
         </div>
     </header>
+   
     <section class="container">
+    
         <form action="" method="post" id="form-edit">
             <div id="area">
-                    <div class="Infos" >
-                    
+
+        <!--Area de informações-->
+                 <div id="Infos" >
+                        <i class="bi bi-x-square-fill" id="close"></i>
                     <ul id="back">
                         
                         <li id="fist-info" >Explore o mundo através das imagens que a internet tem a oferecer e deixe a sua imaginação voar!</li>
@@ -36,19 +42,18 @@
                         <li id="secon-info">Descubra o inesperado e enriqueça sua mente com as infinitas possibilidades de imagens.</li id=" ">
 
                         <li id="tert0-info">Não deixe sua criatividade ser limitada pelo que você já conhece. Busque novas inspirações e perspectivas.</li>
-                    </ulw>
+                    </ul>
                 </div>
             </div>
-           
-            <input type="text" id="text-area" maxlength="18">
+        <!--Area de formulario-->
+            <input type="text" id="text-area" maxlength="18" placeholder="Explorar imagens">
             <button id="button-search"><i class="bi bi-search"></i></button>
         </form>
         <div class="area-img">
             <span id="display-area"></span>
         </div>
-       
-            <div id="description-area"><i class="bi bi-plus-square-dotted"></i> Imagem relacionada a sua pesquisa sobre</span> <p id="description"></p></div>
-        
+        <!--Area de descrição-->
+            <div id="description-area"><i class="bi bi-plus-square-dotted"></i> <p id="description"></p></div>
         
     </section>
     <script src="/js/script.js"></script>
