@@ -22,6 +22,25 @@ header{
     width:100vw;
     height:70px;
 }
+#logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+#menu{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    position: relative;
+}
+#menu i{
+    font-size:25px;
+
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 section{
     background:var(--primary-color);
     height:calc(100vh - 70px);
@@ -40,8 +59,10 @@ section{
     padding-bottom: 20px;
     margin-bottom: 30px;
     border:none;
- 
+    width:100%;
+    position: relative;
 }
+
 #text-area{
     height: 40px;
     width:250px;
@@ -86,5 +107,57 @@ img{
 }
 #description-area i {
     font-size:20px;
+    color:#6abdc2
+}
 
+.Infos{
+    color:var(--text-color);
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top: 5px;
+    margin-right: -20px;
+    font-size: 15px;
+    font-weight: 100;
+    width:400px;
+  
+}
+#area{
+    display: none;
+}
+.opacity{
+    display:block;
+}
+ul{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#back{
+    position: absolute;
+    background-color: #0a2342;
+    width:400px;
+    height: 200px;
+    border-radius: 10px;
+    padding:5px;
+    transition:0.5s linear;
+}
+
+#fist-info{
+    height: 50px;
+    border-radius: 10px;
+    padding:5px;
+}
+@media (max-width:428px){
+    #logo {
+        font-size: 29px;
+        }
+        .Infos {
+         
+            width: 345px;}
+    #back{
+        width:345px
+    }
 }

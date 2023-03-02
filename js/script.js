@@ -4,6 +4,12 @@ let display = document.querySelector('#display-area');
 let desc = document.querySelector('#description');
 let desarea = document.querySelector('#description-area');
 
+let menus = document.querySelector('#hidde-menu')
+let infos = document.querySelector('#area')
+let sobre = document.querySelector('#info')
+
+
+
 button.addEventListener('click',submit)
 
 function submit(e){
@@ -17,3 +23,8 @@ display.innerHTML = generate
 desc.innerText = textinfo
 desarea.style.display = 'block'
 }
+
+menus.addEventListener('click',()=>{
+    
+    infos.classList.toggle("opacity")
+})
