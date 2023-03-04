@@ -16,6 +16,7 @@ body{
 }
 .container{
    padding:0 30px;
+   transition: 0.7s linear;
 }
 /*Header*/
 header{
@@ -171,7 +172,7 @@ ul{
     padding:5px;
 }
 
-@media (max-width:428px){
+@media (max-width:900px){
     #logo {
         font-size: 29px;
         }
